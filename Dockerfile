@@ -6,4 +6,4 @@ COPY Pipfile .
 COPY Pipfile.lock .
 RUN pipenv install --system
 COPY app.py .
-CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:80", "app:app"]
+CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:8080", "app:app"]

@@ -7,7 +7,7 @@ app = Flask(__name__)
 def bomb():
     return GzipBombResponse(size='10G')
 
-@app.route('/gzipbomb/healthz')
+@app.route('/healthz')
 def health():
     return "OK"
 
